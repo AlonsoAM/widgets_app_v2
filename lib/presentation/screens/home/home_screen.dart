@@ -44,7 +44,7 @@ class _CustomListTile extends StatelessWidget {
       subtitle: Text(menuItem.subTitle),
       trailing: Icon(Icons.arrow_forward_ios_rounded, color: colors.primary),
       onTap: () {
-        // TODO Navegación pendiente
+        Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
