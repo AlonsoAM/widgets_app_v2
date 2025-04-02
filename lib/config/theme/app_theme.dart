@@ -20,6 +20,9 @@ class AppTheme {
         'Colors must be between 0 and ${colorList.length}',
       );
 
-  ThemeData theme() =>
-      ThemeData(useMaterial3: true, colorSchemeSeed: colorList[selectedColor]);
+  ThemeData theme() => ThemeData(
+    useMaterial3: true,
+    colorSchemeSeed: colorList[selectedColor],
+    appBarTheme: AppBarTheme(centerTitle: true),
+  );
 }
